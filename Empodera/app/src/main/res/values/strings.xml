@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Empodera</string>
+
+    <!-- Strings da tela activity_main -->
+    <string name="what_search">O que está procurando?</string>
+    <string name="btn_search_person">Buscar Trabalhadora</string>
+    <string name="btn_learn">Aprender</string>
+    <string name="btn_register_work">Cadastrar Serviço</string>
+
+    <!-- Opcoes do checkbox -->
+    <string name="check_cabeleleira">Cabelereira</string>
+    <string name="check_manicure">Manicure</string>
+    <string name="check_pinta_cabelo"> Pinta cabelo</string>
+    <string name="check_cozinheira">Cozinheira</string>
+    <string name="check_boleira">Boleira - doces e salgados</string>
+    <string name="check_faz_pizza"> Faz pizza</string>
+    <string name="check_almoco"> Faz almoço</string>
+
+    <!-- Strings from layout activity_register_service -->
+    <string name="txt_title_register_service">Cadastre seu Serviço</string>
+    <string name="txt_hint_name">Nome</string>
+    <string name="txt_hint_surname">Sobrenome</string>
+    <string name="txt_hint_price_service">Preço do Serviço   Ex: 100,00</string>
+    <string name="txt_hint_price_ticket"> Preço da Passagem   Ex: 10,00</string>
+    <string name="txt_hint_address">Endereço   Ex: Avenida Recife, 310</string>
+    <string name="txt_hint_phone"> Telefone   Ex: (81) 99009-8789</string>
+    <string name="txt_hint_email">E-mail   Ex:maria@gmail.com</string>
+
+    <string name="txt_type_service"> Tipo de Serviço </string>
+    <string name="txt_mobility"> Pode ir na casa da pessoa para fazer o serviço?</string>
+    <string name="txt_radio_yes"> Sim</string>
+    <string name="txt_radio_no">Não</string>
+
+
+    <string name="btn_register_service">Cadastrar</string>
+
+    <!-- Strings da tela activity_lean_subject -->
+    <string name="txt_title_learn_subject"> Bora Aprender?</string>
+    <string name="link_marmitex">
+        <a href="https://www.mulheresempreendedoras.net.br/como-ganhar-dinheiro-vendendo-marmitex/">Como vender Marmitex?</a>
+    </string>
+    <string name="link_summer">
+        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-ganhar-dinheiro-no-verao/">O que vender no verão?</a>
+    </string>
+
+    <string name="link_brigadeiro">
+        <a href="https://www.mulheresempreendedoras.net.br/como-ganhar-dinheiro-vendendo-brigadeiros/">Vender Brigadeiro</a>
+    </string>
+
+    <string name="link_easter">
+        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-ganhar-dinheiro-na-pascoa/"> Como ganhar dinheiro na Páscoa?</a>
+    </string>
+
+    <string name="link_revenda_produtos">
+        <a href="https://www.mulheresempreendedoras.net.br/produtos-para-revenda-por-catalogo/">Como revender produtos?</a>
+    </string>
+
+    <string name="link_ideias_trabalho">
+        <a href="https://www.mulheresempreendedoras.net.br/ideias-para-trabalhar-em-casa/">Mais ideias para ganhar dinnheiro em casa</a>
+    </string>
+
+    <!-- ======================== API KEY GOOGLE MAPS ========================== -->
+
+    <string name="google_maps_key"> AIzaSyD3SPePLo7ulwZAriB4dvY99CAnB4zevKY </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_search_woker">Map</string>
+
+</resources>

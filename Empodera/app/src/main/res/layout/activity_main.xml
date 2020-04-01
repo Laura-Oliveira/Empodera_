@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/screen_main">
+
+    <TextView
+        android:id="@+id/txt_question_looking_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/what_search"
+        android:textColor="@color/title_main"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="30sp"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_question_looking_for"
+        >
+
+            <Button
+                android:id="@+id/btn_offer_job"
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:background="@color/blue"
+                android:text="@string/btn_register_work"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10sp"
+                android:onClick="registerService"
+                />
+
+        <Button
+            android:id="@+id/btn_learn_subject"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/blue"
+            android:text="@string/btn_learn"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/btn_offer_job"
+            android:layout_marginBottom="10sp"
+            android:onClick="learnSubject"
+            />
+
+
+        <Button
+            android:id="@+id/btn_search_worker"
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/blue"
+            android:text="@string/btn_search_person"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/btn_learn_subject"
+            android:onClick="searchWorker"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

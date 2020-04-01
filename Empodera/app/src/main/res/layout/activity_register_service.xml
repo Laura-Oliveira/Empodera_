@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/screen_register_service">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        tools:context=".RegisterServiceActivity">
+
+        <!-- Page title  -->
+        <TextView
+            android:id="@+id/txt_title_register_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_title_register_service"
+            android:textColor="@color/title_main"
+            android:gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30sp"
+            />
+
+        <!-- Register Name -->
+        <EditText
+            android:id="@+id/txt_name"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:hint="@string/txt_hint_name"
+            android:textColorHint="@color/blue"
+            android:background="@color/background_textbox"
+            android:layout_marginBottom="10sp"
+            />
+
+        <!-- Register Surname -->
+        <EditText
+            android:id="@+id/txt_surname"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:hint="@string/txt_hint_surname"
+            android:textColorHint="@color/blue"
+            android:background="@color/background_textbox"
+            android:layout_marginBottom="10sp"
+            />
+
+        <!-- Register Type of Service (Title) -->
+        <TextView
+            android:id="@+id/txt_type_service"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:text="@string/txt_type_service"
+            android:textColor="@color/title_main"
+            android:textSize="11pt"
+            android:textStyle="bold"
+            android:layout_marginBottom="5sp"
+            />
+
+        <!-- Register Type of Service (Checkbox Options) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_lunch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_check_lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_almoco"
+                android:textColor="@color/title_main"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:layout_marginBottom="8pt"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_cake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/txt_check_cake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_boleira"
+                android:textColor="@color/title_main"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:layout_marginBottom="8pt"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_hair_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_check_hair_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_cabeleleira"
+                android:textColor="@color/title_main"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:layout_marginBottom="8pt"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_chef"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_check_chef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_cozinheira"
+                android:textColor="@color/title_main"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:layout_marginBottom="8pt"
+                />
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_box_pizza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/check_pizza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_faz_pizza"
+                android:textColor="@color/title_main"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:layout_marginBottom="8pt"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_nails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/check_nails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_manicure"
+                android:textColor="@color/title_main"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:layout_marginBottom="8pt"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_color_hair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:id="@+id/check_color_hair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/check_pinta_cabelo"
+                android:textColor="@color/title_main"
+                android:textSize="10pt"
+                android:textStyle="bold"
+                android:layout_marginBottom="8pt"
+                />
+        </LinearLayout>
+-->
+        <!-- Register Price of Service -->
+        <EditText
+            android:id="@+id/txt_price_service"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:inputType="numberDecimal"
+            android:hint="@string/txt_hint_price_service"
+            android:textColorHint="@color/blue"
+            android:background="@color/background_textbox"
+            android:layout_marginBottom="10sp"
+            />
+
+        <!-- Register Address -->
+        <EditText
+            android:id="@+id/txt_address"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:hint="@string/txt_hint_address"
+            android:textColorHint="@color/blue"
+            android:background="@color/background_textbox"
+            android:layout_marginBottom="10sp"
+            />
+
+        <!-- Register Availability to go to someone's house -->
+        <RadioGroup
+            android:id="@+id/txt_group_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            >
+            <TextView
+                android:id="@+id/txt_mobility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_mobility"
+                android:textColor="@color/title_main"
+                android:textStyle="bold"
+                android:textSize="11pt"
+                />
+            <RadioButton
+                android:id="@+id/txt_radio_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_radio_yes"
+                android:textColor="@color/title_main"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                />
+
+            <RadioButton
+                android:id="@+id/txt_radio_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_radio_no"
+                android:textColor="@color/title_main"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="8pt"
+                />
+        </RadioGroup>
+
+        <!-- Register Price Transport -->
+        <EditText
+            android:id="@+id/txt_price_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:inputType="numberDecimal"
+            android:hint="@string/txt_hint_price_ticket"
+            android:textColorHint="@color/blue"
+            android:background="@color/background_textbox"
+            android:layout_marginBottom="10sp"
+            />
+
+
+        <EditText
+            android:id="@+id/txt_phone"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:hint="@string/txt_hint_phone"
+            android:textColorHint="@color/blue"
+            android:background="@color/background_textbox"
+            android:layout_marginBottom="10sp"
+            />
+
+        <!-- Register E-mail -->
+        <EditText
+            android:id="@+id/txt_email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:hint="@string/txt_hint_email"
+            android:textColorHint="@color/blue"
+            android:background="@color/background_textbox"
+            android:layout_marginBottom="10sp"
+            />
+
+        <!-- Register Button Regiter Worker -->
+        <Button
+            android:id="@+id/btn_register_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_register_service"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="23sp"
+            android:layout_marginTop="10sp"
+            android:onClick="registerServiceWorker"
+            />
+    </LinearLayout>
+</ScrollView>
