@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Empodera</string>
 
-    <!-- Strings da tela activity_main -->
+    <!-- Strings activity_main -->
     <string name="what_search">O que está procurando?</string>
     <string name="btn_search_person">Buscar Trabalhadora</string>
     <string name="btn_learn">Aprender</string>
     <string name="btn_register_work">Cadastrar Serviço</string>
 
-    <!-- Opcoes do checkbox -->
+    <!-- Checkbox  activity_main -->
     <string name="check_cabeleleira">Cabelereira</string>
     <string name="check_manicure">Manicure</string>
     <string name="check_pinta_cabelo"> Pinta cabelo</string>
@@ -16,7 +16,8 @@
     <string name="check_faz_pizza"> Faz pizza</string>
     <string name="check_almoco"> Faz almoço</string>
 
-    <!-- Strings from layout activity_register_service -->
+
+    <!-- Strings activity_register_service -->
     <string name="txt_title_register_service">Cadastre seu Serviço</string>
     <string name="txt_hint_name">Nome</string>
     <string name="txt_hint_surname">Sobrenome</string>
@@ -25,16 +26,19 @@
     <string name="txt_hint_address">Endereço   Ex: Avenida Recife, 310</string>
     <string name="txt_hint_phone"> Telefone   Ex: (81) 99009-8789</string>
     <string name="txt_hint_email">E-mail   Ex:maria@gmail.com</string>
-
     <string name="txt_type_service"> Tipo de Serviço </string>
     <string name="txt_mobility"> Pode ir na casa da pessoa para fazer o serviço?</string>
     <string name="txt_radio_yes"> Sim</string>
     <string name="txt_radio_no">Não</string>
 
-
+    <!-- Buttons activity_register_service-->
     <string name="btn_register_service">Cadastrar</string>
 
-    <!-- Strings da tela activity_lean_subject -->
+    <!-- Pop up messages activity_register_service -->
+    <string name="success_pop_up"> Serviço Cadastrado com Sucesso! </string>
+
+
+    <!-- Strings activity_lean_subject -->
     <string name="txt_title_learn_subject"> Bora Aprender?</string>
     <string name="link_marmitex">
         <a href="https://www.mulheresempreendedoras.net.br/como-ganhar-dinheiro-vendendo-marmitex/">Como vender Marmitex?</a>

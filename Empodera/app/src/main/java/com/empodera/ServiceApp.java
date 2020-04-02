@@ -1,25 +1,27 @@
 package com.empodera;
 
-import android.widget.TextView;
+import android.widget.EditText;
 
 public class ServiceApp
 {
     private String id;
-    private TextView name, surname;
-    private TextView address, email, phone;
-    private TextView typeService, priceService, priceTicket;
+    private String name, surname;
+    private String address, email, phone;
+   // private EditText typeService;
+    private double priceService, priceTicket;
 
     public ServiceApp()
     {
         this.id = id;
-        this.typeService = typeService;
-        this.priceService = priceService;
-        this.priceTicket = priceTicket;
         this.name = name;
         this.surname = surname;
+        this.priceService = priceService;
+        this.priceTicket = priceTicket;
         this.address = address;
         this.email = email;
         this.phone = phone;
+      //  this.typeService = typeService;
+
     }
 
     public String getId()
@@ -32,83 +34,84 @@ public class ServiceApp
         this.id = id;
     }
 
-    public TextView getName()
+    public String getName()
     {
         return name;
     }
 
-    public void setName(TextView name)
+    public void setName(String name)
     {
         this.name = name;
     }
 
-    public TextView getSurname()
+    public String getSurname()
     {
         return surname;
     }
 
-    public void setSurname(TextView surname)
+    public void setSurname(String surname)
     {
         this.surname = surname;
     }
 
-    public TextView getAddress()
+    public String getAddress()
     {
         return address;
     }
 
-    public void setAddress(TextView address)
+    public void setAddress(String address)
     {
         this.address = address;
     }
 
-    public TextView getEmail()
+    public String getEmail()
     {
         return email;
     }
 
-    public void setEmail(TextView email)
+    public void setEmail(String email)
     {
         this.email = email;
     }
 
-    public TextView getPhone()
+    public String getPhone()
     {
         return phone;
     }
 
-    public void setPhone(TextView phone)
+    public void setPhone(String phone)
     {
         this.phone = phone;
     }
 
-    public TextView getTypeService()
-    {
-        return typeService;
-    }
-
-    public void setTypeService(TextView typeService)
-    {
-        this.typeService = typeService;
-    }
-
-    public TextView getPriceService()
+    public double getPriceService()
     {
         return priceService;
     }
 
-    public void setPriceService(TextView priceService)
+    public void setPriceService(double priceService)
     {
         this.priceService = priceService;
     }
 
-    public TextView getPriceTicket()
+    public double getPriceTicket()
     {
         return priceTicket;
     }
 
-    public void setPriceTicket(TextView priceTicket)
+    public void setPriceTicket(double priceTicket)
     {
         this.priceTicket = priceTicket;
     }
+
+    /* public EditText getTypeService()
+    {
+        return typeService;
+    }
+
+    public void setTypeService(EditText typeService)
+    {
+        this.typeService = typeService;
+    } */
+
 }
