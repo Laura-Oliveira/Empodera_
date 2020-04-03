@@ -22,7 +22,9 @@ public class RegisterServiceActivity extends AppCompatActivity
     private CheckBox checkbox_cake, checkbox_hair_style, checkbox_chef;
     private TextView txt_check_cake, txt_check_hair_style, txt_check_chef;
 
-    private String txt_name, txt_surname_type_service;
+    private String txt_name, txt_surname, txt_address, txt_email, txt_phone;
+    private Double db_price_service, db_price_ticket;
+
   //  private CheckBox checkbox_nails, checkbox_color_hair, checkbox_lunch, checkbox_pizza;
 
     @Override
@@ -96,21 +98,32 @@ public class RegisterServiceActivity extends AppCompatActivity
         DatabaseReference dbReference = dbReferenceInstance.child("service");
        // Snackbar successPopUp = Snackbar.make(view, R.string.success_pop_up, BaseTransientBottomBar.LENGTH_LONG);
 
-        /* Parsing Data of price service and price ticket data from String to Double */
-        Double double_price_service = Double.parseDouble(price_service.getText().toString());
-        Double double_price_ticket = Double.parseDouble(price_ticket.getText().toString());
+        /* Converting EditText type into String type */
+        txt_name = name.getText().toString();
+        txt_surname = surname.getText().toString();
+        txt_address = address.getText().toString();
+        txt_phone = phone.getText().toString();
+        txt_email = email.getText().toString();
 
+        /* Converting EditText type into String type for can covert into Double type */
+        db_price_service = Double.parseDouble(price_service.getText().toString());
+        db_price_ticket = Double.parseDouble(price_ticket.getText().toString());
+
+        /* Setting data into ServiceApp class */
         ServiceApp serviceApp = new ServiceApp();
-        serviceApp.setName(name.getText().toString());
-        serviceApp.setSurname(surname.getText().toString());
-        serviceApp.setAddress(address.getText().toString());
-        serviceApp.setEmail(email.getText().toString());
-        serviceApp.setPhone(phone.getText().toString());
-        serviceApp.setPriceService(double_price_service);
-        serviceApp.setPriceTicket(double_price_ticket);
+        serviceApp.setName(txt_name);
+        serviceApp.setSurname(txt_surname);
+        serviceApp.setAddress(txt_address);
+        serviceApp.setPhone(txt_phone);
+        serviceApp.setEmail(txt_email);
+        serviceApp.setPriceService(db_price_service);
+        serviceApp.setPriceTicket(db_price_ticket);
       //  serviceApp.setTypeService(type_service);
+
+        /* Transfering data into Firebase object reference */
         serviceApp.setId(dbReference.push().getKey());
 
+        /* The object transfer the data for the Firebase database that on the cloud */
         dbReference.child(serviceApp.getId()).setValue(serviceApp);
 
         Intent intenet = new Intent(RegisterServiceActivity.this, MainActivity.class);
