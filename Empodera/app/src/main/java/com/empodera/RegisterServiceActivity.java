@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -58,9 +59,23 @@ public class RegisterServiceActivity extends AppCompatActivity
 
     public void registerServiceWorker(View view)
     {
-//        String serviceOptions = "";
+        String serviceOptions = "";
 
-      /*  if(checkbox_cake.isChecked())
+        DatabaseReference dbReferenceInstance = database.getReference();
+        DatabaseReference dbReference = dbReferenceInstance.child("service");
+
+        /* Converting EditText type into String type */
+        txt_name = name.getText().toString();
+        txt_surname = surname.getText().toString();
+        txt_address = address.getText().toString();
+        txt_phone = phone.getText().toString();
+        txt_email = email.getText().toString();
+
+        /* Converting EditText type into String type for can covert into Double type */
+        db_price_service = Double.parseDouble(price_service.getText().toString());
+        db_price_ticket = Double.parseDouble(price_ticket.getText().toString());
+
+        if(checkbox_cake.isChecked())
         {
             serviceOptions+= (txt_check_cake.getText().toString()+ "\n");
         }
@@ -75,59 +90,33 @@ public class RegisterServiceActivity extends AppCompatActivity
 
         if(serviceOptions!= "" || serviceOptions!= " ")
         {
-            DatabaseReference dbReference = database.getReference("service");
+            dbReference = database.getReference("service");
 
+            /* Setting data into ServiceApp class */
             ServiceApp serviceApp = new ServiceApp();
-            serviceApp.setPriceService(price_service);
-            serviceApp.setPriceTicket(price_ticket);
-            serviceApp.setTypeService(type_service);
+            serviceApp.setName(txt_name);
+            serviceApp.setSurname(txt_surname);
+            serviceApp.setAddress(txt_address);
+            serviceApp.setPhone(txt_phone);
+            serviceApp.setEmail(txt_email);
+            serviceApp.setPriceService(db_price_service);
+            serviceApp.setPriceTicket(db_price_ticket);
+            //  serviceApp.setTypeService(type_service);
             serviceApp.setId(dbReference.push().getKey());
 
+            /* Transfering data into Firebase object reference */
+            serviceApp.setId(dbReference.push().getKey());
+
+            /* The object transfer the data for the Firebase database that on the cloud */
             dbReference.child(serviceApp.getId()).setValue(serviceApp);
 
             Intent intenet = new Intent(RegisterServiceActivity.this, MainActivity.class);
-            intenet.putExtra("sucess", "Serviço Cadastrado com sucesso!");
             startActivity(intenet);
+            Toast.makeText(this, "Serviço Registrado com Sucesso!", Toast.LENGTH_LONG).show();
         }
         else
         {
             Toast.makeText(this, "Preencha todos os campos obrigatórios", Toast.LENGTH_SHORT).show();
         }
-        */
-        DatabaseReference dbReferenceInstance = database.getReference();
-        DatabaseReference dbReference = dbReferenceInstance.child("service");
-       // Snackbar successPopUp = Snackbar.make(view, R.string.success_pop_up, BaseTransientBottomBar.LENGTH_LONG);
-
-        /* Converting EditText type into String type */
-        txt_name = name.getText().toString();
-        txt_surname = surname.getText().toString();
-        txt_address = address.getText().toString();
-        txt_phone = phone.getText().toString();
-        txt_email = email.getText().toString();
-
-        /* Converting EditText type into String type for can covert into Double type */
-        db_price_service = Double.parseDouble(price_service.getText().toString());
-        db_price_ticket = Double.parseDouble(price_ticket.getText().toString());
-
-        /* Setting data into ServiceApp class */
-        ServiceApp serviceApp = new ServiceApp();
-        serviceApp.setName(txt_name);
-        serviceApp.setSurname(txt_surname);
-        serviceApp.setAddress(txt_address);
-        serviceApp.setPhone(txt_phone);
-        serviceApp.setEmail(txt_email);
-        serviceApp.setPriceService(db_price_service);
-        serviceApp.setPriceTicket(db_price_ticket);
-      //  serviceApp.setTypeService(type_service);
-
-        /* Transfering data into Firebase object reference */
-        serviceApp.setId(dbReference.push().getKey());
-
-        /* The object transfer the data for the Firebase database that on the cloud */
-        dbReference.child(serviceApp.getId()).setValue(serviceApp);
-
-        Intent intenet = new Intent(RegisterServiceActivity.this, MainActivity.class);
-        startActivity(intenet);
-       // successPopUp.make(findViewById(R.id.activity_main), R.string.success_pop_up, Snackbar.LENGTH_LONG).show();
     }
 }
