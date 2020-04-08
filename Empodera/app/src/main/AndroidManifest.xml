@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RegisterUserActivity"></activity>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -22,13 +23,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".SearchWorkerActivity"
-            android:label="@string/title_activity_search_woker"></activity>
+            android:label="@string/title_activity_search_woker" />
         <activity android:name=".LearnSubjectActivity" />
         <activity android:name=".RegisterServiceActivity" />
-
     </application>
 
 </manifest>

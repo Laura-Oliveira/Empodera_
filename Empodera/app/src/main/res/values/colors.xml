@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimaryDark">#1565C0</color>
-    <color name="colorPrimary">#01579B</color>
-    <color name="colorAccent">#01579B</color>
-    <color name="btn_color">  #006e00 </color>
+    <color name="colorPrimary"> #FF5C5C  </color>
+    <color name="colorPrimaryDark"> #FF9D8E </color>
+    <color name="colorAccent">#0288D1</color>
+    <color name="btn_color">  #FFE1D1 </color>
     <color name="white"> #BDBDBD </color>
     <color name="black"> #424242</color>
     <color name="title_main"> #263238</color>
-    <color name="blue">#01579B</color>
-    <color name="color_background">#E0E0E0 </color>
+    <color name="color_background"> #FFE1D1  </color> <!-- #E0E0E0-->
     <color name="background_textbox"> #EEEEEE</color>
-    <color name="background_splash"> #FFE1D1</color>
+    <color name="background_splash"> #FFE1D1 </color>
 </resources>

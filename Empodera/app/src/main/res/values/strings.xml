@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">Empodera</string>
 
+    <!-- Strings activity_login -->
+    <string name="txt_description_image"> Icon that represents the brand app</string>
+    <string name="hint_username"> Usuário ou E-mail </string>
+    <string name="hint_password"> Senha </string>
+    <string name="btn_login"> Entrar </string>
+    <string name="btn_register_user">Cadastrar </string>
+
+
     <!-- Strings activity_main -->
     <string name="what_search">O que está procurando?</string>
     <string name="btn_search_person">Buscar Trabalhadora</string>
@@ -68,5 +76,6 @@
     <string name="google_maps_key"> AIzaSyD3SPePLo7ulwZAriB4dvY99CAnB4zevKY </string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_search_woker">Map</string>
+
 
 </resources>

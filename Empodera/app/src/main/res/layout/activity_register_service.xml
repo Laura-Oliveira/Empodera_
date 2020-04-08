@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="45sp"
             android:hint="@string/txt_hint_name"
-            android:textColorHint="@color/blue"
+            android:textColorHint="@color/btn_color"
             android:background="@color/background_textbox"
             android:layout_marginBottom="10sp"
             />
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="45sp"
             android:hint="@string/txt_hint_surname"
-            android:textColorHint="@color/blue"
+            android:textColorHint="@color/btn_color"
             android:background="@color/background_textbox"
             android:layout_marginBottom="10sp"
             />
@@ -237,7 +237,7 @@
             android:layout_height="45sp"
             android:inputType="numberDecimal"
             android:hint="@string/txt_hint_price_service"
-            android:textColorHint="@color/blue"
+            android:textColorHint="@color/btn_color"
             android:background="@color/background_textbox"
             android:layout_marginBottom="10sp"
             />
@@ -248,7 +248,7 @@
             android:layout_width="match_parent"
             android:layout_height="45sp"
             android:hint="@string/txt_hint_address"
-            android:textColorHint="@color/blue"
+            android:textColorHint="@color/btn_color"
             android:background="@color/background_textbox"
             android:layout_marginBottom="10sp"
             />
@@ -299,7 +299,7 @@
             android:layout_height="45sp"
             android:inputType="numberDecimal"
             android:hint="@string/txt_hint_price_ticket"
-            android:textColorHint="@color/blue"
+            android:textColorHint="@color/btn_color"
             android:background="@color/background_textbox"
             android:layout_marginBottom="10sp"
             />
@@ -311,7 +311,7 @@
             android:layout_width="match_parent"
             android:layout_height="45sp"
             android:hint="@string/txt_hint_phone"
-            android:textColorHint="@color/blue"
+            android:textColorHint="@color/btn_color"
             android:background="@color/background_textbox"
             android:layout_marginBottom="10sp"
             />
@@ -323,7 +323,7 @@
             android:layout_width="match_parent"
             android:layout_height="45sp"
             android:hint="@string/txt_hint_email"
-            android:textColorHint="@color/blue"
+            android:textColorHint="@color/btn_color"
             android:background="@color/background_textbox"
             android:layout_marginBottom="10sp"
             />
@@ -334,7 +334,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btn_register_service"
-            android:background="@color/blue"
+            android:background="@color/btn_color"
             android:textColor="@color/white"
             android:textSize="14sp"
             android:textStyle="bold"
