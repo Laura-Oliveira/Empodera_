@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 
-public class SplashScreen extends AppCompatActivity
+public class SplashScreenActivity extends AppCompatActivity
 {
     /* Timer Splash Screen */
     private static int SPLASH_TIME_OUT = 5000;
@@ -25,7 +25,7 @@ public class SplashScreen extends AppCompatActivity
             @Override
             public void run()
             {   /* The Main Activity will be started */
-                Intent intent = new Intent(SplashScreen.this, LoginActivity.class);
+                Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
                 startActivity(intent);
 
                 finish();
