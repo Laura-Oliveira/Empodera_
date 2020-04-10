@@ -21,7 +21,7 @@
             android:contentDescription="@string/txt_description_image"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="48dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="8dp"
             android:src="@mipmap/ic_icon_round"
             >
         </ImageView>
@@ -37,9 +37,9 @@
             >
         </TextView>
 
-        <!-- TextBox para Login e Senha -->
+        <!-- =============== LOGIN EMAIL =============== -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txt_username_input"
+            android:id="@+id/input_login_username"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
@@ -47,17 +47,18 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txt_username_edit_text"
+                android:id="@+id/input_login_username_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="text"
+                android:inputType="textEmailAddress"
                 android:maxLines="1"
                 >
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- =============== LOGIN PASSWORD =============== -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/txt_password_input"
+            android:id="@+id/input_login_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
@@ -66,7 +67,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/txt_password_edit_text"
+                android:id="@+id/input_login_password_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
@@ -74,25 +75,29 @@
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- Login Button -->
+        <!-- =============== LOGIN BUTTON =============== -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_login"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
             android:layout_height="70sp"
             android:backgroundTint="@color/btn_color"
-            android:text="@string/btn_login">
+            android:text="@string/btn_login"
+            android:textColor="@color/colorPrimary"
+            >
         </com.google.android.material.button.MaterialButton>
 
-        <!-- Register Button -->
+        <!-- =============== REGISTER BUTTON =============== -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_register_user"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
             android:layout_height="70sp"
             android:backgroundTint="@color/btn_color"
             android:text="@string/btn_register_user"
-            android:onClick="registerUser">
+            android:textColor="@color/colorPrimary"
+            android:onClick="openRegisterUserPage"
+            >
         </com.google.android.material.button.MaterialButton>
 
     </LinearLayout>
