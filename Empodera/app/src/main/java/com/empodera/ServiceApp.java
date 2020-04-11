@@ -7,7 +7,7 @@ public class ServiceApp
     private String id;
     private String name, surname;
     private String address, email, phone;
-   // private EditText typeService;
+    private String typeService;
     private double priceService, priceTicket;
 
     public ServiceApp()
@@ -20,7 +20,7 @@ public class ServiceApp
         this.address = address;
         this.email = email;
         this.phone = phone;
-      //  this.typeService = typeService;
+        this.typeService = typeService;
 
     }
 
@@ -104,14 +104,14 @@ public class ServiceApp
         this.priceTicket = priceTicket;
     }
 
-    /* public EditText getTypeService()
+    public String getTypeService()
     {
         return typeService;
     }
 
-    public void setTypeService(EditText typeService)
+    public void setTypeService(String typeService)
     {
         this.typeService = typeService;
-    } */
+    }
 
 }

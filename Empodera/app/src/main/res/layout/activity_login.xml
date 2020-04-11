@@ -44,6 +44,7 @@
             android:layout_height="match_parent"
             android:layout_margin="4dp"
             android:hint="@string/hint_username"
+            app:endIconMode="clear_text"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -64,6 +65,7 @@
             android:layout_margin="4dp"
             android:hint="@string/hint_password"
             app:errorEnabled="true"
+            app:endIconMode="password_toggle"
             >
 
             <com.google.android.material.textfield.TextInputEditText

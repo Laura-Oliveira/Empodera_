@@ -46,6 +46,7 @@
                 android:layout_height="wrap_content">
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radio_btn_register_user"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radio_btn_user"
@@ -55,6 +56,7 @@
                     />
 
                 <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radio_btn_register_worker"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/radio_btn_worker"
@@ -66,53 +68,58 @@
 
         <!-- ========= REGISTER NAME ========= -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_register_username"
+            android:id="@+id/register_username"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
             android:hint="@string/register_username"
+            app:endIconMode="clear_text"
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_register_username_edit_text"
+                android:id="@+id/register_username_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"
                 android:maxLines="1"
+                android:maxLength="15"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- ========= REGISTER SURNAME ========= -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_register_surname"
+            android:id="@+id/register_surname"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
             android:hint="@string/register_surname"
+            app:endIconMode="clear_text"
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_register_surname_edit_text"
+                android:id="@+id/register_surname_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="text"
                 android:maxLines="1"
+                android:maxLength="15"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- ========= REGISTER EMAIL ========= -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_regiter_email"
+            android:id="@+id/regiter_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
             android:hint="@string/register_email"
+            app:endIconMode="clear_text"
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_register_email_edit_text"
+                android:id="@+id/register_email_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textEmailAddress"
@@ -123,32 +130,35 @@
 
         <!-- ========= REGISTER PHONE ========= -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_register_phone"
+            android:id="@+id/register_phone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/register_phone"
+            app:endIconMode="clear_text"
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input_register_password_edit_text"
+                android:id="@+id/register_phone_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="phone"
                 android:maxLines="1"
+                android:maxLength="11"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- ========= REGISTER PASSWORD ========= -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/input_register_password"
+            android:id="@+id/register_password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="@string/register_password"
+            app:endIconMode="password_toggle"
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/input-password_edit_text"
+                android:id="@+id/register_password_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
