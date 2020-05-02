@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -73,7 +74,7 @@ public class RegisterUserActivity extends AppCompatActivity
         /* Data ransfered from object to Firebase database */
         databaseReference.child(userApp.getId()).setValue(userApp);
 
-        Intent activity = new Intent(RegisterUserActivity.this, SearchWorkerActivity.class);
+        Intent activity = new Intent(RegisterUserActivity.this, LoginActivity.class);
         startActivity(activity);
         Toast.makeText(this,"Usuário Cadastrado com Sucesso",Toast.LENGTH_LONG).show();
 

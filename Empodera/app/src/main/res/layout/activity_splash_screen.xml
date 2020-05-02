@@ -9,7 +9,7 @@
         android:id="@+id/img_splash_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/img_start"
+        android:src="@mipmap/img_start"
         />
 
 </RelativeLayout>

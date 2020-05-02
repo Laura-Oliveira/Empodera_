@@ -113,7 +113,7 @@ public class RegisterServiceActivity extends AppCompatActivity
             /* Data ransfered from object to Firebase database */
             dbReference.child(serviceApp.getId()).setValue(serviceApp);
 
-            Intent intenet = new Intent(RegisterServiceActivity.this, SearchWorkerActivity.class);
+            Intent intenet = new Intent(RegisterServiceActivity.this, LoginActivity.class);
             startActivity(intenet);
             Toast.makeText(this, "Serviço Registrado com Sucesso!", Toast.LENGTH_LONG).show();
         }

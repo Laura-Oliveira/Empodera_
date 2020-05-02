@@ -8,14 +8,6 @@ public class UserApp
 
     public UserApp()
     {
-        this.id = id;
-        this.type_user = type_user;
-        this.type_worker = type_worker;
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.phone = phone;
-        this.password = password;
     }
 
     public String getId()
