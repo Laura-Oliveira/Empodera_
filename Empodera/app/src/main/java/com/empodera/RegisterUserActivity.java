@@ -74,7 +74,7 @@ public class RegisterUserActivity extends AppCompatActivity
         /* Data ransfered from object to Firebase database */
         databaseReference.child(userApp.getId()).setValue(userApp);
 
-        Intent activity = new Intent(RegisterUserActivity.this, LoginActivity.class);
+        Intent activity = new Intent(RegisterUserActivity.this, SearchWorkerActivity.class);
         startActivity(activity);
         Toast.makeText(this,"Usuário Cadastrado com Sucesso",Toast.LENGTH_LONG).show();
 

@@ -5,21 +5,16 @@ import android.widget.EditText;
 public class ServiceApp
 {
     private String id;
-    private String name, surname;
-    private String address, email, phone;
+    private String serviceName;
     private String typeService;
-    private double priceService, priceTicket;
+    private float priceService, priceTicket;
 
     public ServiceApp()
     {
         this.id = id;
-        this.name = name;
-        this.surname = surname;
+        this.serviceName = serviceName;
         this.priceService = priceService;
         this.priceTicket = priceTicket;
-        this.address = address;
-        this.email = email;
-        this.phone = phone;
         this.typeService = typeService;
 
     }
@@ -34,72 +29,32 @@ public class ServiceApp
         this.id = id;
     }
 
-    public String getName()
+    public String getServiceName()
     {
-        return name;
+        return serviceName;
     }
 
-    public void setName(String name)
+    public void setServiceName(String serviceName)
     {
-        this.name = name;
+        this.serviceName = serviceName;
     }
 
-    public String getSurname()
-    {
-        return surname;
-    }
-
-    public void setSurname(String surname)
-    {
-        this.surname = surname;
-    }
-
-    public String getAddress()
-    {
-        return address;
-    }
-
-    public void setAddress(String address)
-    {
-        this.address = address;
-    }
-
-    public String getEmail()
-    {
-        return email;
-    }
-
-    public void setEmail(String email)
-    {
-        this.email = email;
-    }
-
-    public String getPhone()
-    {
-        return phone;
-    }
-
-    public void setPhone(String phone)
-    {
-        this.phone = phone;
-    }
-
-    public double getPriceService()
+    public float getPriceService()
     {
         return priceService;
     }
 
-    public void setPriceService(double priceService)
+    public void setPriceService(float priceService)
     {
         this.priceService = priceService;
     }
 
-    public double getPriceTicket()
+    public float getPriceTicket()
     {
         return priceTicket;
     }
 
-    public void setPriceTicket(double priceTicket)
+    public void setPriceTicket(float priceTicket)
     {
         this.priceTicket = priceTicket;
     }

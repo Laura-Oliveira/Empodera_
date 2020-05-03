@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.provider.Settings;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
@@ -17,6 +18,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.empodera.RegisterServiceActivity;
 
 public class SearchWorkerActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -81,5 +83,11 @@ public class SearchWorkerActivity extends FragmentActivity implements OnMapReady
         });
 
         alertDialog.show();
+    }
+
+    public void registerService(View view)
+    {
+        Intent activity = new Intent(this, RegisterServiceActivity.class);
+        startActivity(activity);
     }
 }

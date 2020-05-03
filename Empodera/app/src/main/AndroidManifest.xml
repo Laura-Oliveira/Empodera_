@@ -23,20 +23,18 @@
             android:resource="@drawable/ic_icon_round_background" />
 
         <activity android:name=".SplashScreenActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity"/>
         <activity android:name=".RegisterUserActivity"/>
         <activity
             android:name=".SearchWorkerActivity"
             android:label="@string/title_activity_search_woker" />
         <activity android:name=".LearnSubjectActivity" />
-        <activity android:name=".RegisterServiceActivity" />
+        <activity android:name=".RegisterServiceActivity"/>
 
     </application>
 
