@@ -1,4 +1,4 @@
-package com.empodera;
+package com.empodera.View;
 
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.empodera.R;
 
 public class LearnSubjectActivity extends AppCompatActivity {
 

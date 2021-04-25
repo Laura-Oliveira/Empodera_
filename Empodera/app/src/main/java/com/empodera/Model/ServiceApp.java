@@ -1,4 +1,4 @@
-package com.empodera;
+package com.empodera.Model;
 
 import android.widget.EditText;
 

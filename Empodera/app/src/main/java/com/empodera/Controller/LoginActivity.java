@@ -1,10 +1,12 @@
-package com.empodera;
+package com.empodera.Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.empodera.R;
 
 public class LoginActivity extends AppCompatActivity
 {
@@ -18,7 +20,7 @@ public class LoginActivity extends AppCompatActivity
 
     public void openRegisterUserPage(View view)
     {
-        Intent activity = new Intent(LoginActivity.this, RegisterUserActivity.class);
+        Intent activity = new Intent(LoginActivity.this, RegisterUserTypeActivity.class);
         startActivity(activity);
     }
 }

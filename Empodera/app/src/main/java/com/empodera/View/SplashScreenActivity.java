@@ -1,10 +1,13 @@
-package com.empodera;
+package com.empodera.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.empodera.Controller.LoginActivity;
+import com.empodera.R;
 
 
 public class SplashScreenActivity extends AppCompatActivity

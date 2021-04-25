@@ -5,16 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterUserActivity">
+    tools:context=".Controller.RegisterUserActivity">
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
 
         <!-- ====== REGISTER USERNAME IMAGE + TITLE TOP PAGE ======-->
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:contentDescription="@string/txt_description_image"
@@ -23,9 +23,9 @@
             android:layout_marginBottom="13dp"
             android:src="@mipmap/ic_icon_round"
             >
-        </ImageView>
+        </androidx.appcompat.widget.AppCompatImageView>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -34,7 +34,7 @@
             android:textAllCaps="true"
             android:textSize="16sp"
             >
-        </TextView>
+        </com.google.android.material.textview.MaterialTextView>
 
         <!-- ========= REGISTER USER RADIO BUTTON TYPE USER ========= -->
         <RadioGroup
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             >
 
-            <LinearLayout
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -65,7 +65,7 @@
                     android:textSize="10pt"
                     android:layout_marginRight="20sp"
                     />
-            </LinearLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
         </RadioGroup>
 
         <!-- ========= REGISTER USER USERNAME ========= -->
@@ -191,8 +191,6 @@
 
         </RelativeLayout>
 
-    </LinearLayout>
-
-
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </ScrollView>

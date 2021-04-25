@@ -1,4 +1,4 @@
-package com.empodera;
+package com.empodera.View;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -12,13 +12,11 @@ import android.view.View;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
+import com.empodera.R;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.empodera.RegisterServiceActivity;
+import com.empodera.Controller.RegisterServiceActivity;
 
 public class SearchWorkerActivity extends FragmentActivity implements OnMapReadyCallback {
 

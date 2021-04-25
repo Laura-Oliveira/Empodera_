@@ -1,4 +1,4 @@
-package com.empodera;
+package com.empodera.Controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.empodera.Model.ServiceApp;
+import com.empodera.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
